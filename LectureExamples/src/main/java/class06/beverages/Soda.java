@@ -1,9 +1,5 @@
 package class06.beverages;
 
-public class Soda {
-}
-package class06.beverages;
-
 public class Soda extends Beverage {
 
     private final boolean caffeinated;
