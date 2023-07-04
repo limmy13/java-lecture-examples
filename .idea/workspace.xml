@@ -5,16 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d970e471-80b7-49b2-bda2-245cebb601b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/LectureExamples/src/main/java/class07/Discountable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LectureExamples/LectureExamples.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureExamples/src/main/java/class07/Discountable.java" beforeDir="false" afterPath="$PROJECT_DIR$/LectureExamples/src/main/java/class07/Discountable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LectureExamples/src/main/java/class07/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/LectureExamples/src/main/java/class07/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureExamples/src/main/java/class07/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/LectureExamples/src/main/java/class07/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureExamples/src/main/java/class07/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/LectureExamples/src/main/java/class07/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureExamples/src/main/java/class07/books/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/LectureExamples/src/main/java/class07/books/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LectureExamples/src/main/java/class07/books/UsedBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/LectureExamples/src/main/java/class07/books/UsedBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureExamples/src/main/java/class07/merchandise/Apparel.java" beforeDir="false" afterPath="$PROJECT_DIR$/LectureExamples/src/main/java/class07/merchandise/Apparel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureExamples/src/main/java/class07/merchandise/Calendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/LectureExamples/src/main/java/class07/merchandise/Calendar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureExamples/src/main/java/class07/merchandise/Drinkware.java" beforeDir="false" afterPath="$PROJECT_DIR$/LectureExamples/src/main/java/class07/merchandise/Drinkware.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureExamples/src/main/java/class07/merchandise/Merchandise.java" beforeDir="false" afterPath="$PROJECT_DIR$/LectureExamples/src/main/java/class07/merchandise/Merchandise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureExamples/target/classes/class03/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureExamples/target/classes/class03/Library.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureExamples/target/classes/class03/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureExamples/target/classes/class04/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureExamples/target/classes/class04/Library.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LectureExamples/target/classes/class04/Main.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -56,7 +63,12 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;dev.gabrielchl.intellijpets.settings.AppSettingsConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="class07.books" />
+    </key>
+  </component>
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="class06.Main" />
       <module name="LectureExamples" />

@@ -28,36 +28,41 @@ public class UsedBook extends Book implements Discountable {
 
     @Override
     public void applyPercentDiscount(double percent) {
-            if (percent > 1) {
-                percent /= 100;
-            }
-            double newPrice = getCurrentPrice() * (1- percent);
-            setCurrentPrice(Utils.roundToPenny(newPrice));
-            if (getCurrentPrice() == getOriginalPrice()) {
-                System.out.println("\nDiscount of " + percent + "% has been applied to product "
-                        + getId() + ", " + getName());
-            } else {
-                System.out.println("\n Additional discount of " + percent + "% has been applied to product "
-                        + getId() + ", " + getName());
-            }
+        if (percent > 1) {
+            percent /= 100;
+        }
+        if (getCurrentPrice() == getOriginalPrice()) {
+            System.out.println("\nDiscount of " + (percent * 100) +
+                    "% has been applied to product " + getId() +
+                    ", " + getName());
+        } else {
+            System.out.println("\nAdditional discount of " + (percent * 100)  +
+                    "% has been applied to product " + getId() +
+                    ", " + getName());
+        }
+        double newPrice = getCurrentPrice() * (1 - percent);
+        setCurrentPrice(Utils.roundToPenny(newPrice));
     }
 
     @Override
     public void applyFlatDiscount(double amount) {
-        setCurrentPrice(getCurrentPrice() - amount);
         if (getCurrentPrice() == getOriginalPrice()) {
-            System.out.println("\nDiscount of " + amount + "% has been applied to product "
-                    + getId() + ", " + getName());
+            System.out.println("\nDiscount of $" + amount +
+                    " has been applied to product " + getId() +
+                    ", " + getName());
         } else {
-            System.out.println("\n Additional discount of " + amount + "% has been applied to product "
-                    + getId() + ", " + getName());
+            System.out.println("\nAdditional discount of $" + amount +
+                    " has been applied to product " + getId() +
+                    ", " + getName());
         }
+        setCurrentPrice(getCurrentPrice() - amount);
     }
 
     @Override
-    public void removedDiscount() {
+    public void removeDiscount() {
         setCurrentPrice(getOriginalPrice());
-        System.out.println("Used book " + getId() + ", " + getName() + ", has been reset to the original price of $"
-                + getOriginalPrice());
+        System.out.println("Used book " + getId() + ", " +
+                getName() + ", has been reset to the original price of $" +
+                getOriginalPrice());
     }
 }
