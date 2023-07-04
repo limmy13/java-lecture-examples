@@ -31,19 +31,23 @@ public class Main {
         /* CASTING WITH CLASSES */
 
         // A UsedBook object of Book type
-        Book fahrenheit451 = new UsedBook("Fahrenheit 451", "A masterpiece of dystopian storytelling", 14.50, 3, "Ray Bradbury", "science fiction", "hardcover", 158, "good");
+        Book fahrenheit451 = new UsedBook("Fahrenheit 451", "A masterpiece of dystopian storytelling",
+                14.50, 3, "Ray Bradbury", "science fiction", "hardcover", 158, "good");
         // If you print the book you can see that it has a condition value,
         //  because it is using the UsedBook implementation of toString
         System.out.println(fahrenheit451);
 
         // TODO: Try accessing the getter for condition — you have to cast it as a UsedBook type for this to work
+        // System.out.println(fahrenheit451.getCondition())
 
+        System.out.println(((UsedBook) fahrenheit451).getCondition());
 
 
         /* INTERFACES */
 
         // An Apparel object, which inherits from Merchandise, which implements Discountable
-        Apparel hpScarf = new Apparel("Harry Potter Scarf", "Join Gryffindor House! Wand not included.", 15.99, 8, "Accessories", "Harry Potter", new String[] {"OS"}, new String[] {"red", "yellow"});
+        Apparel hpScarf = new Apparel("Harry Potter Scarf", "Join Gryffindor House! Wand not included.",
+                15.99, 8, "Accessories", "Harry Potter", new String[] {"OS"}, new String[] {"red", "yellow"});
         System.out.println(hpScarf);
 
         // TODO: Apply a flat discount of $3 to the scarf and print object
@@ -56,7 +60,8 @@ public class Main {
 
 
         // A UsedBook object, which implements Discountable
-        UsedBook pnp = new UsedBook("Pride and Prejudice", "This timeless classic showcases Austen's wit and winsome characters", 7.99, 1, "Jane Austen", "fiction", "paperback", 284, "like new");
+        UsedBook pnp = new UsedBook("Pride and Prejudice", "This timeless classic showcases Austen's wit and winsome characters",
+                7.99, 1, "Jane Austen", "fiction", "paperback", 284, "like new");
         System.out.println(pnp);
 
         // TODO: Apply a flat discount of $2 to the scarf and print object

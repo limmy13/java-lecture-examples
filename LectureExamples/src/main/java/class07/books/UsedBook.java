@@ -2,7 +2,10 @@ package class07.books;
 
 // TODO: implement Discountable interface
 
-public class UsedBook extends Book {
+import class07.Discountable;
+import class07.Utils;
+
+public class UsedBook extends Book implements Discountable {
 
     private final String condition;
 
@@ -23,4 +26,38 @@ public class UsedBook extends Book {
 
     // TODO: add methods required by Discountable interface
 
+    @Override
+    public void applyPercentDiscount(double percent) {
+            if (percent > 1) {
+                percent /= 100;
+            }
+            double newPrice = getCurrentPrice() * (1- percent);
+            setCurrentPrice(Utils.roundToPenny(newPrice));
+            if (getCurrentPrice() == getOriginalPrice()) {
+                System.out.println("\nDiscount of " + percent + "% has been applied to product "
+                        + getId() + ", " + getName());
+            } else {
+                System.out.println("\n Additional discount of " + percent + "% has been applied to product "
+                        + getId() + ", " + getName());
+            }
+    }
+
+    @Override
+    public void applyFlatDiscount(double amount) {
+        setCurrentPrice(getCurrentPrice() - amount);
+        if (getCurrentPrice() == getOriginalPrice()) {
+            System.out.println("\nDiscount of " + amount + "% has been applied to product "
+                    + getId() + ", " + getName());
+        } else {
+            System.out.println("\n Additional discount of " + amount + "% has been applied to product "
+                    + getId() + ", " + getName());
+        }
+    }
+
+    @Override
+    public void removedDiscount() {
+        setCurrentPrice(getOriginalPrice());
+        System.out.println("Used book " + getId() + ", " + getName() + ", has been reset to the original price of $"
+                + getOriginalPrice());
+    }
 }
